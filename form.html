@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        input {
+            margin: 15px;
+        }
+
+        input:required {
+            color: blue;
+        }
+
+        #username, #password {
+            border-style: solid;
+            border-width: 3px;
+            border-color: black;
+            border-radius: 10px;
+            padding: 5px;
+            color: black;
+            background-color: white;
+        }
+        
+       
+
+        #username:focus, #password:focus {
+            color: white;
+            background-color: black;
+        }
+
+        .login{
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: white;
+        }
+        
+        .login:hover{
+            color: white;
+            background-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <label for="username">
+            Username:
+            <input type="text" required id="username"> 
+            <br>
+        </label>
+        <label for="password">
+            Password:
+            <input type="text" required id="password">
+        </label>
+        <br>
+        <input type="submit" class="login">
+    </form>
+    
+</body>
+</html>
